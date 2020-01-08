@@ -8,12 +8,12 @@ export default class ChromeBoisDomain extends Component {
       drawChromeBoiAtCoords(event.clientX, event.clientY)
   }
 
-  resize = (event) => {
-      if (event.key == 'a') {
-          resize(+)
-      } else if (event.key == 's') {
-          resize ('-')
-      }
+  handleKeyDown = (event) => {
+    if (event.key === 'a') {
+      resize('+')
+    } else if (event.key === 's') {
+      resize('-')
+    }
   }
   
   render() {
