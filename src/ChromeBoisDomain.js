@@ -10,9 +10,9 @@ export default class ChromeBoisDomain extends Component {
 
   keyHandler = (event) => {
       if (event.key === 'a') {
-          resize('+')
+          resize ('+')
       } else if (event.key === 's') {
-          resize('-')
+          resize ('-')
       }
   }
   
